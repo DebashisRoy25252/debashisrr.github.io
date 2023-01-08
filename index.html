@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Debashis Roy</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h4 class="logo">Debashis<span>Roy</span></h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h4><span>Hey,</span>I'm</h4>
+            <h1>Debashis <span>Roy</span></h1>
+            <h3>From the Great</h3>
+            <h2><span>INDIA</span></h2>
+        </div>
+    </div>
+
+    <!--About section starts-->
+    <section class="about" id="about-me">
+        <div class="main">
+            <img src="about.jpg" alt="">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5><span>DevOps</span> and <span>Cloud Enthusiast</span></h5>
+                <p>
+                    I'm a DevOps engineer. I work with Docker also kubernetes, 
+                    YAML and so on...which are important for me to be a DevOps engineer
+                    or a Cloud Enthusiast.
+                    I also works as a  web developer, UI, and React developer.
+                </p>
+                <button type="button" class="about-button">
+                    <a href="CV.pdf">CV</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill section starts -->
+    <section class="skill" id="skills">
+        <div class="main">
+            <div class="skill-text">
+                <h2>S<span>kill</span>s</h2>
+                <div class="skill-title">
+                    <h4 class="skills-links active-links" onclick="openTab('programming')">Programming In</h4>
+                    <h4 class="skills-links" onclick="openTab('devops')">DevOps</h4>
+                </div>
+                <div class="tab-contain active-tab" id="programming">
+                    <ul>
+                        <li><span>Java</span><br>63%</li>
+                        <li><span>Python</span><br>47%</li>
+                        <li><span>Java Script</span><br>41%</li>
+                        <li><span>React</span><br>1%</li>
+                        <li><span>HTML</span><br>49%</li>
+                        <li><span>CSS</span><br>48%</li>
+                    </ul>
+                </div>
+                <div class="tab-contain" id="devops">
+                    <ul>
+                        <li><span>linux</span><br>0%</li>
+                        <li><span>Docker</span><br>0%</li>
+                        <li><span>kubernetes</span><br>0%</li>
+                        <li><span>YAML</span><br>0%</li>
+                    </ul>
+                </div>       
+            </div>
+        </div>
+    </section>
+    
+    <!-- contact section starts -->
+    <!-- <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-at"></i>gjstoney25252@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-retro"></i>+91 7551058109</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/DebashisRoy25252"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/debashisroy2k2/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/debashis25252"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/debashisroy25252/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <p id="contact">Contact Me</p>
+        <p>gjstoney25252@gmail.com <br> +91 7551058109</p>
+        <div class="social">
+            <a href="https://github.com/DebashisRoy25252"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/debashisroy2k2/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/debashis25252"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/in/debashisroy25252/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <P class="end">CopyRight By Debashis Roy</P>
+    </footer>
+
+
+<script>
+    var tabLinks =document.getElementsByClassName("skills-links");
+    var tabContents =document.getElementsByClassName("tab-contain");
+    function openTab(tabName){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-links");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabName).classList.add("active-tab")
+    }   
+</script>
+
+</body>
+</html>
