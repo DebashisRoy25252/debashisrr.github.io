@@ -4,6 +4,13 @@
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Open Sans', sans-serif;
+}
 .hero{
     height: 100vh;
     width: 100%;
@@ -123,7 +130,7 @@ h4{
 }
 .about-button:hover{
     background-color: transparent;
-    border: 2px solid #f9004b;
+    border: 1.5px solid #f9004b;
     cursor: pointer;
      
 }
